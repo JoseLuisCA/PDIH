@@ -3,7 +3,6 @@
 void pixel(int x, int y, unsigned char color){
 	union REGS in, out;
 
-	/* BIOS 10h, AH=0Ch: escribir pixel en modo grafico. */
 	in.h.ah = 0x0C;
 	in.h.al = color;
 	in.h.bh = 0;
@@ -28,14 +27,11 @@ static void mipausa(){
 int main(){
 	int i;
 
-	/* Modo 4: grafico CGA 320x200 con 4 colores. */
 	setvideomode(4);
 
-	for(i = 0; i < 100; i++){
-		pixel(20 + i, 20 + i, 1);
-		pixel(120 + i, 20 + i, 2);
-		pixel(220 + i, 20 + i, 3);
-	}
+	pixel(10, 10, 1);
+    pixel(20, 20, 2);
+    pixel(30, 30, 3);
 
 	mipausa();
 

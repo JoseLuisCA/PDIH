@@ -11,6 +11,5 @@ void gotoxy(int x, int y){
 
 int main(){
     gotoxy(10,5);
-    printf("Prueba de gotoxy");
     return 0;
 }
