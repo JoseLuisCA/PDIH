@@ -1,0 +1,66 @@
+%!
+
+<< /PageSize [842 595] >> setpagedevice
+
+% ===== CÍRCULO GRIS CON BORDE NEGRO =====
+
+% Interior gris
+0.8 setgray
+newpath
+220 300 94 0 360 arc
+fill
+
+% Borde negro
+0 setgray
+5 setlinewidth
+newpath
+220 300 94 0 360 arc
+stroke
+
+
+% ===== TEXTO =====
+
+% Nombre
+/Helvetica-Bold findfont
+37 scalefont
+setfont
+
+0 setgray
+
+385 380 moveto
+(Drago Kovacevic) show
+
+
+% Cargo
+/Helvetica findfont
+27 scalefont
+setfont
+
+0.5 setgray
+
+430 335 moveto
+(Ejecutivo de Cuentas) show
+
+
+% Dirección y contacto
+/Helvetica findfont
+20 scalefont
+setfont
+
+472 255 moveto
+(P\272 de la Castellana, 141) show
+
+465 225 moveto
+(Local 2-Edificio Cuzco IV) show
+
+565 195 moveto
+(29046 Madrid) show
+
+405 165 moveto
+(Tels. 914 174 550 / 669896 224) show
+
+530 135 moveto
+(drago@serotel.es) show
+
+
+showpage

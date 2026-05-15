@@ -1,0 +1,63 @@
+%!
+
+<< /PageSize [842 595] >> setpagedevice
+
+
+
+
+1 0 0 setrgbcolor
+
+% círculo izquierdo
+newpath
+170 360 70 0 360 arc
+fill
+
+% círculo derecho
+newpath
+290 360 70 0 360 arc
+fill
+
+
+% triángulo inferior
+newpath
+110 325 moveto
+350 325 lineto
+230 200 lineto
+closepath
+fill
+
+
+
+% línea 1
+/Helvetica findfont
+24 scalefont
+setfont
+
+0.75 setgray
+390 250 moveto
+(La belleza no es nada, no permanece.) show
+
+
+% línea 2
+0.6 setgray
+390 220 moveto
+(No sabes la suerte que tienes sin belleza.) show
+
+
+% línea 3
+0.4 setgray
+390 190 moveto
+(Porque si le gustas a alguien,) show
+
+
+% línea 4
+/Helvetica-Bold findfont
+24 scalefont
+setfont
+
+0.15 setgray
+390 160 moveto
+(sabes que es por otra cosa.) show
+
+
+showpage
